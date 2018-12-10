@@ -1,0 +1,8 @@
+<div class="album-container">
+  <div class="album-title">{{album.title}}</div>
+  <div *ngIf="selectedAlbum === true">
+    <div *ngFor="let photo of photos">
+      <app-photo-thumbnail [photo]="photo"></app-photo-thumbnail>
+    </div>
+  </div>
+</div>
